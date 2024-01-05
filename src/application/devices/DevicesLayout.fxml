@@ -14,7 +14,7 @@
 <AnchorPane xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.devices.DevicesController">
 	<!-- TODO Add Nodes -->
 
-	<VBox spacing="5" maxWidth="400" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+	<VBox spacing="5" maxWidth="250" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
 
 		<HBox alignment="CENTER_LEFT" spacing="5">
 			<Label text="Devices" />
@@ -22,7 +22,7 @@
 
 		</HBox>
 
-		<ListView fx:id="listDevices" maxWidth="400" prefHeight="120" minHeight="300"/>
+		<ListView fx:id="listDevices" maxWidth="250" prefHeight="120" minHeight="300"/>
 		<Button onAction="#handleConnectToWifiClicked" maxWidth="Infinity" text="重启设备" />
 		<Button onAction="#handleTakeSnapshotClicked" maxWidth="Infinity" text="Take snapshot" />
 		<TextField maxWidth="Infinity" promptText="Send text to device" onAction="#onDeviceInputEnter" fx:id="textFieldDeviceInput"/>
