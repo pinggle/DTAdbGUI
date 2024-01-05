@@ -23,7 +23,7 @@
 		</HBox>
 
 		<ListView fx:id="listDevices" maxWidth="200" prefHeight="120" minHeight="120"/>
-		<Button onAction="#handleConnectToWifiClicked" maxWidth="Infinity" text="Connect device via WIFI" />
+		<Button onAction="#handleConnectToWifiClicked" maxWidth="Infinity" text="重启设备" />
 		<Button onAction="#handleTakeSnapshotClicked" maxWidth="Infinity" text="Take snapshot" />
 		<TextField maxWidth="Infinity" promptText="Send text to device" onAction="#onDeviceInputEnter" fx:id="textFieldDeviceInput"/>
 		<Button text="Change Emulator date" maxWidth="Infinity" onAction="#onChangeEmulatorDate"/>

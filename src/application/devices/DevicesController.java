@@ -217,9 +217,11 @@ public class DevicesController implements Initializable {
                 Device selectedDevice = Model.instance.getSelectedDevice();
 
                 if (selectedDevice != null) {
-                    Logger.ds("Connecting device to wifi: " + getDeviceDescription(selectedDevice));
-                    Logger.fes(ADBHelper.connectDeviceToWifi(), "Device connected, you can disconnect it from the usb port");
 
+                            ADBHelper.reboot(selectedDevice.getId());
+//                    Logger.ds("Connecting device to wifi: " + getDeviceDescription(selectedDevice));
+//                    Logger.fes(ADBHelper.connectDeviceToWifi(), "Device connected, you can disconnect it from the usb port");
+//
                 } else {
                     DialogUtil.showErrorDialog("Please select device first");
                 }

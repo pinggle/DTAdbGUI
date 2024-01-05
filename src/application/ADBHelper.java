@@ -99,6 +99,22 @@ public class ADBHelper {
         return "Wired Error";
     }
 
+    public static String reboot(String deviceId) {
+
+        String result = AdbUtils.run("-s " + deviceId + " reboot");
+        String[] split = result.split("\n");
+
+        if (split.length > 0) {
+            if (split[split.length - 1].contains("Failure") || split[split.length - 1].contains("Missing")) {
+                return split[split.length - 1];
+            } else {
+                return null;
+            }
+        }
+
+        return "Wired Error";
+    }
+
     public static void sendInputText(String text) {
         String result = AdbUtils.run("shell input text \"" + text + "\"");
         Logger.d("shell input text " + text + " -> " + result);
