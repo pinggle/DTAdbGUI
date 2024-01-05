@@ -59,8 +59,8 @@
     <right>
         <VBox alignment="TOP_CENTER" spacing="5">
             <fx:include source="devices/DevicesLayout.fxml" />
-            <VBox prefHeight="150" minHeight="145"/>
-            <CheckBox fx:id="checkBoxAlwaysOnTop" onAction="#handleAlwaysOnTop" text="Always on top" prefWidth="200"/>
+            <VBox prefHeight="300" minHeight="300"/>
+            <CheckBox fx:id="checkBoxAlwaysOnTop" onAction="#handleAlwaysOnTop" text="Always on top" prefWidth="400"/>
             <Button text="Close edit window" wrapText="true" maxWidth="200" fx:id="buttonToggleEdit" onAction="#handleToggleMainView"/>
             <Button text="Open app directory" maxWidth="200" onAction="#onOpenAppDirectory"/>
         </VBox>

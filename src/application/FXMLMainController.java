@@ -167,7 +167,7 @@ public class FXMLMainController implements Initializable {
             } else {
                 tabPane.setVisible(true);
                 stage.setResizable(true);
-                stage.setWidth(1200);
+                stage.setWidth(500);
 
                 buttonToggleEdit.setText("Close edit window");
             }
